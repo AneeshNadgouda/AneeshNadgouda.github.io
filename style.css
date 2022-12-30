@@ -2,13 +2,18 @@ body{
     margin-top:10%;
     background-color: #151515;
     width: 100%;
-
 }
 
 h1{
     color: #FFFFFF;
     font-weight: bold;
     font-size: 310%;
+}
+
+h2{
+    color: #FFFFFF;
+    font-weight:normal;
+    font-size: 150%;
 }
 
 p{
@@ -25,6 +30,12 @@ p{
     transform: translateX(-50%);
 } 
 
+.bruh{
+    margin-top: 5%;
+}
+
+
+
 .panel {
     width: 625px;
     height: 180px;
@@ -34,7 +45,11 @@ p{
     justify-content: center;
     cursor: pointer;
     padding: 5%;
+    margin-bottom: 7px;
   }
- 
 
-
+@media (max-width: 767px) {
+    .fixed-top {
+      position: static;
+    }
+  }
