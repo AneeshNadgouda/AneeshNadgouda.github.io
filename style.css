@@ -30,15 +30,13 @@ p{
     transform: translateX(-50%);
 } 
 
-.bruh{
+.mt{
     margin-top: 5%;
 }
 
-
-
 .panel {
-    width: 625px;
-    height: 180px;
+    width: 68%;
+    height: 190px;
     background-color: #202022;
     display: flex;
     flex-direction: column;
@@ -49,7 +47,71 @@ p{
   }
 
 @media (max-width: 767px) {
+  .panel {
+    width: 100%;
+  }
+}
+
+.first-panel {
+    width: 68%;
+    height: 190px;
+    background-color: #202022;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5%;
+    margin-bottom: 7px;
+  }
+
+@media (max-width: 767px) {
+  .first-panel {
+    width: 100%;
+    margin-top: 60%;
+  }
+}
+
+@media (max-width: 767px) {
     .fixed-top {
       position: static;
     }
   }
+
+.pdf-button {
+    color: rgb(0, 0, 0);
+    background-color: #888385;
+    border-radius:50px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 12px 24px;
+    cursor: pointer;
+    background-image: url("pdf.png");
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    background-position:13px;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.img1 {
+    position: fixed;
+    bottom: 9%;
+    left: 17.5%;
+    height: 50px;
+    width: 50px;
+}
+
+#link1 {
+    position: fixed;
+    bottom: 10.5%;
+    left: 22%;
+}
+
+#link2 {
+    position: fixed;
+    bottom: 10.5%;
+    left: 26.5%;
+}
+
+/*MAKE CSS FOR THESE 3 FOR SMALL SCREEN CASES*/
