@@ -1,50 +1,57 @@
-body{
-    margin-top:10%;
-    background-color: #151515;
-    width: 100%;
+body {
+  padding-top: 10%;
+  background-color: #151515;
+  width: 100%;
 }
 
-h1{
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 310%;
+h1 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 310%;
 }
 
-h2{
-    color: #FFFFFF;
-    font-weight:normal;
-    font-size: 150%;
+h2 {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 150%;
 }
 
-p{
-    color: #888385;
+p {
+  color: #888385;
 }
 
-.container{
-    width:100%;
-    max-width: 100%;
-    height:100%;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-} 
+.container {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-.mt{
-    margin-top: 5%;
+.mt {
+  margin-top: 5%;
 }
 
 .panel {
-    width: 68%;
-    height: 190px;
-    background-color: #202022;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer;
-    padding: 5%;
-    margin-bottom: 7px;
-  }
+  width: 68%;
+  height: 190px;
+  background-color: #202022;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  padding: 5%;
+  margin-bottom: 7px;
+  transition: transform 0.5s, filter 0.5s;
+  filter: brightness(100%);
+}
+
+.panel:hover {
+  transform: scale(1.07);
+  filter: brightness(150%);
+}
 
 @media (max-width: 767px) {
   .panel {
@@ -53,65 +60,128 @@ p{
 }
 
 .first-panel {
-    width: 68%;
-    height: 190px;
-    background-color: #202022;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer;
-    padding: 5%;
-    margin-bottom: 7px;
-  }
+  width: 68%;
+  height: 190px;
+  background-color: #202022;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  padding: 5%;
+  margin-bottom: 7px;
+  transition: transform 0.5s, filter 0.5s;
+  filter: brightness(100%);
+}
+
+.first-panel:hover {
+  transform: scale(1.07);
+  filter: brightness(150%);
+}
 
 @media (max-width: 767px) {
   .first-panel {
     width: 100%;
-    margin-top: 60%;
+    margin-top: 135%;
   }
 }
 
 @media (max-width: 767px) {
-    .fixed-top {
-      position: static;
-    }
+  .fixed-top {
+    position: static;
   }
+}
 
 .pdf-button {
-    color: rgb(0, 0, 0);
-    background-color: #888385;
-    border-radius:50px;
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
-    font-size: 18px;
-    font-weight: bolder;
-    padding: 12px 24px;
-    cursor: pointer;
-    background-image: url("pdf.png");
-    background-size: 28px 28px;
-    background-repeat: no-repeat;
-    background-position:13px;
-    padding-left: 50px;
-    padding-right: 30px;
+  color: rgb(0, 0, 0);
+  background-color: #888385;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 12px 24px;
+  cursor: pointer;
+  background-image: url("pdf.png");
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position: 13px;
+  padding-left: 50px;
+  padding-right: 30px;
+}
+
+@media (max-width: 767px) {
+  .pdf-button {
+    margin-left: 32%;
+    z-index: 0.9;
+  }
 }
 
 .img1 {
-    position: fixed;
-    bottom: 9%;
-    left: 17.5%;
-    height: 50px;
-    width: 50px;
+  position: fixed;
+  bottom: 9%;
+  left: 17.5%;
+  height: 50px;
+  width: 50px;
+}
+
+.img1-small {
+  height: 50px;
+  width: 50px;
+  margin-left: 20%;
+}
+
+.img2 {
+  height: 15px;
+  width: 15px;
+  margin-bottom: 5px;
 }
 
 #link1 {
-    position: fixed;
-    bottom: 10.5%;
-    left: 22%;
+  position: fixed;
+  bottom: 10.5%;
+  left: 22%;
+  z-index: 1;
+  color: #ffffff;
+}
+
+#link-small {
+  color: #ffffff;
+  margin-left: 25px;
 }
 
 #link2 {
-    position: fixed;
-    bottom: 10.5%;
-    left: 26.5%;
+  position: fixed;
+  bottom: 10.5%;
+  left: 28%;
+  z-index: 1;
+  color: #ffffff;
 }
 
 /*MAKE CSS FOR THESE 3 FOR SMALL SCREEN CASES*/
+
+@media (max-width: 767px) {
+  .large-screen-only {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .large-screen-only {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .small-screen-only {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .small-screen-only {
+    display: none;
+  }
+}
+
+.col-md-3 {
+  z-index: 999;
+}
